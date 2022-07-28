@@ -1,0 +1,214 @@
+#logo {
+  padding-left: 50px;
+  width: 35px;
+  height: 35px;
+}
+
+.nav li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px;
+  color: #151212;
+}
+.nav button {
+  background: #fff;
+  border: none;
+}
+ 
+#bottomNav li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px;
+  color: gray;
+}
+
+#agently {
+  font-size: 40px;
+  font-weight: normal;
+  padding-right: 300px;
+
+}
+
+#filter {
+    border: solid;
+    border-radius: 10px;
+    border-color: gray;
+    font-size: 12px;
+    color: #151212;
+}
+
+input {
+  padding: 15px ;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #d6d1d5;
+  font-size: 20px;
+  
+}
+
+input::placeholder {
+  font-size: 15px;
+  font-weight: lighter;
+  color: #bbb;
+  
+}
+
+#input {
+  padding-right: 200px;
+}
+
+#user {
+  width: 80px;
+  height: 80px;
+
+}
+
+.properties li {
+  list-style-type: none;
+  padding: 15px;
+  float: left;
+  color: #151212;
+
+}
+
+.properties img {
+  width: 245px;
+  height: 245px;
+  border-radius: 5%;
+
+}
+
+.properties button {
+  background: #fff;
+  border: none;
+}
+
+.specs li{
+  list-style-type: none;
+  display: inline-block;
+  color: #151212;
+  background: #fff
+
+}
+
+#nums li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+#nums img {
+  width: 25px;
+  height: 25px;
+}
+#nums {
+  text-align: center;
+  color: #151212;
+  padding: 50px;
+}
+
+.specs img{
+  width: 20px;
+  height: 20px;
+}
+
+#rooms img{
+  width: 40px;
+  height: 40px;
+}
+
+#rooms li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 80px;
+  padding-top: 20px;
+ 
+}
+
+.threee {
+  font-size: 30px;
+  color: #151212;
+}
+
+.three {
+  font-size: 15px;
+  color: #151212;
+
+}
+
+#arrow {
+  width: 25px;
+  height: 25px;
+  padding: 40px 31px 0px;
+}
+
+#distance {
+  color: gray;
+}
+
+#copyrights li {
+  display: inline-block;
+  padding: 10px;
+  color: #151212;
+}
+
+#lang {
+  color: #151212;
+  float: right;
+  list-style-type: none;
+}
+
+#circle {
+  width: 12px;
+  height: 12px;
+  line-height: 15px;
+  border-radius: 50%;
+  border: solid;
+  border-color: #151212;
+  color: #151212;
+  text-align: center;
+}
+
+.image {
+  float: left;
+  padding-left: 30px;
+
+}
+.image img {
+  padding: 30px 100px 30px 0;
+  width: 600px;
+  height: 570px;
+  border-radius: 30px;
+ 
+}
+.info {
+  padding-top: 60px;
+}
+
+#desc li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+#desc {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#own {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#buy {
+  text-align: center;
+  background-color: #151212;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 50px;
+}
+
+#bbutton {
+  padding-left: 100px;
+}
