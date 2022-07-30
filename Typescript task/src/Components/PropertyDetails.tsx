@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from './Navigation';
 import About from './About';
-import FooterNav from './FooterNav';
+import Footer from './Footer';
 
 
 const PropertyDetails = () => {
@@ -9,7 +9,7 @@ const PropertyDetails = () => {
     <div>
         <Navigation />
         <About />
-        <FooterNav />
+        <Footer />
     </div>
   )
 }

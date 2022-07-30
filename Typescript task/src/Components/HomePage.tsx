@@ -4,6 +4,7 @@ import Home from './Home';
 import Navigation from './Navigation';
 import Listings from './Listings';
 import FooterNav from './FooterNav';
+import Footer from './Footer';
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
         <BottomNav />
         <Listings />
         <FooterNav />
+        <Footer />
     </div>
   )
 }

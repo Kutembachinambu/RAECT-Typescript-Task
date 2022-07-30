@@ -34,6 +34,7 @@ type PropertyType = {
     bthrmImg:string;
     toiletQty:number;
     toiletImg:string;
+    state:string;
 };
 
 
@@ -47,17 +48,25 @@ const PropertyList = (props: IProperties) => {
     return (
         
             <div>
-                {properties.map((property) => (
+                {properties.map((property, index) => (
                     <div key={property.id}>
                         <div>
                         <ul className="properties">
-                            <li><button onClick={()=>navigate('/About', { state: {id:1, text: "Hello World!"} })}><img src={property.image} alt="House" /></button>
-                            <div>{property.location}</div>
-                            <div id="distance">{property.distance}</div>
+                            <li><button onClick={()=>navigate('/about', { state: properties[index] })}><img src={property.image} alt="House" /></button>
+                            <ul className="state">
+                                <li><div id="location">{property.location}</div></li>
+                                <li><div className={property.state}>{property.state}</div></li>
+                            </ul>  
+                            
+                            <p id="distance">{property.distance}</p>
                             <div className='specs'>
+                                <ul>
                                 <li><img src={property.bdrmImg} alt="bed" /><span className="three">{property.bdrmQty}</span></li>
                                 <li><img src={property.bthrmImg} alt="bathroom" /><span className="three">{property.bthrmQty}</span></li>
                                 <li><img src={property.toiletImg} alt="toilet" /><span className="three">{property.toiletQty}</span></li>
+
+                                </ul>
+                                
                             </div>
                            
                             <div>&#x20A6;30,000,000</div>
@@ -89,7 +98,8 @@ const Listings = () => {
             bthrmQty:3,
             bthrmImg:bathrm,
             toiletQty:3,
-            toiletImg:toilet
+            toiletImg:toilet,
+            state:"New"
 
             },
             {
@@ -102,7 +112,8 @@ const Listings = () => {
                 bthrmQty:3,
                 bthrmImg:bathrm,
                 toiletQty:3,
-                toiletImg:toilet
+                toiletImg:toilet,
+                state:"Serviced"
     
                 },
                 {
@@ -115,7 +126,8 @@ const Listings = () => {
                     bthrmQty:3,
                     bthrmImg:bathrm,
                     toiletQty:3,
-                    toiletImg:toilet
+                    toiletImg:toilet,
+                    state:"New"
                 
                     },
                     {
@@ -128,7 +140,8 @@ const Listings = () => {
                         bthrmQty:3,
                         bthrmImg:bathrm,
                         toiletQty:3,
-                        toiletImg:toilet
+                        toiletImg:toilet,
+                        state:"New"
                         
                         },
                         {
@@ -141,7 +154,8 @@ const Listings = () => {
                             bthrmQty:3,
                             bthrmImg:bathrm,
                             toiletQty:3,
-                            toiletImg:toilet
+                            toiletImg:toilet,
+                            state:"Serviced"
                 
                             },
                             {
@@ -154,7 +168,8 @@ const Listings = () => {
                                 bthrmQty:3,
                                 bthrmImg:bathrm,
                                 toiletQty:3,
-                                toiletImg:toilet
+                                toiletImg:toilet,
+                                state:"New"
                             
                              },
                              {
@@ -167,7 +182,8 @@ const Listings = () => {
                                 bthrmQty:3,
                                 bthrmImg:bathrm,
                                 toiletQty:3,
-                                toiletImg:toilet
+                                toiletImg:toilet,
+                                state:"New"
                                 
                                 },
                                 {
@@ -180,7 +196,8 @@ const Listings = () => {
                                     bthrmQty:3,
                                     bthrmImg:bathrm,
                                     toiletQty:3,
-                                    toiletImg:toilet
+                                    toiletImg:toilet,
+                                    state:"New"
                         
                                     },
                                     {
@@ -193,7 +210,8 @@ const Listings = () => {
                                         bthrmQty:3,
                                         bthrmImg:bathrm,
                                         toiletQty:3,
-                                        toiletImg:toilet
+                                        toiletImg:toilet,
+                                        state:"Serviced"
                             
                                         },
                                         {
@@ -206,7 +224,8 @@ const Listings = () => {
                                             bthrmQty:3,
                                             bthrmImg:bathrm,
                                             toiletQty:3,
-                                            toiletImg:toilet
+                                            toiletImg:toilet,
+                                            state:"Serviced"
                                 
                                             }
         ],

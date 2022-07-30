@@ -22,6 +22,12 @@
   color: gray;
 }
 
+
+#bottomNav span {
+  text-decoration: underline;
+  color: #151212;
+}
+
 #agently {
   font-size: 40px;
   font-weight: normal;
@@ -39,7 +45,7 @@
 
 input {
   padding: 15px ;
-  border-radius: 10px;
+  border-radius: 30px;
   outline: none;
   border: 1px solid #d6d1d5;
   font-size: 20px;
@@ -126,7 +132,7 @@ input::placeholder {
 }
 
 .threee {
-  font-size: 30px;
+  font-size: 25px;
   color: #151212;
 }
 
@@ -177,8 +183,8 @@ input::placeholder {
 .image img {
   padding: 30px 100px 30px 0;
   width: 600px;
-  height: 570px;
-  border-radius: 30px;
+  height: 540px;
+  border-radius: 35px;
  
 }
 .info {
@@ -195,10 +201,34 @@ input::placeholder {
   text-align: center;
   padding-bottom: 50px;
 }
+#desc span {
+  text-decoration: underline;
+  color: #151212;
+
+}
+
+.image h4 {
+  text-decoration: underline;
+
+}
+
+#angle {
+  color: gray;
+}
 
 #own {
   font-size: 25px;
   font-weight: bold;
+}
+
+#own span{
+  text-decoration: underline;
+  color: #151212;
+}
+
+#show {
+  text-decoration: underline;
+  color: #151212;
 }
 
 #buy {
@@ -206,9 +236,68 @@ input::placeholder {
   background-color: #151212;
   color: #fff;
   border-radius: 10px;
-  padding: 10px 50px;
+  padding: 35px 30px 0px;
+  font-size: 20px;
 }
 
-#bbutton {
-  padding-left: 100px;
+#bbutton li{
+  padding-left: 20px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+#search {
+    position: absolute;
+    left: 900px;
+    top: 111px;
+    width: 20px;
+    height: 20px;
+}
+.share img {
+  width: 30px;
+  height: 30px;
+  border: solid;
+  border-color: #151212;
+  border-radius: 10px;
+  padding: 10px;
+}
+.share {
+  padding-top: 30px;
+}
+
+#states {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 70px;
+
+}
+
+.New {
+  background-color: rgb(10, 136, 10);
+  color: #fff;
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.Serviced {
+  background-color: rgb(29, 29, 201);
+  color: #fff;
+  font-size: 10px;
+  padding: 3px;
+  text-align: center;
+
+}
+#location {
+  padding-right: 40px;
+}
+#stats li{
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 25px;
+   
+}
+
+#loc {
+  padding-right: 100px;
 }

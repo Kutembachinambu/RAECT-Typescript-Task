@@ -8,7 +8,7 @@ const BottomNav = () => {
   return (
     <div>
         <ul id='bottomNav'>
-            <li>House</li>
+            <li><span>House</span></li>
             <li>Office Space</li>
             <li>Flats and Apartments</li>
             <li>Lands</li>
