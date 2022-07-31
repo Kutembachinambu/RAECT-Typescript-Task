@@ -1,13 +1,8 @@
 import {useLocation} from "react-router-dom";
-import boxhse from "../images/boxhse.jpg";
-import bathrm from "../images/bath.png";
-import bed from "../images/bed.jpg";
-import toilet from "../images/toilet.png";
 import kitch from '../images/kitchen.png';
 import livingrm from '../images/sittingrm.png';
 import share from '../images/share.png';
 import asterisk from '../images/asterisk.png';
-import PropertyDetails from "./PropertyDetails";
 
 function About() {
   const location = useLocation();
@@ -23,8 +18,7 @@ console.log(properties);
           <li id="loc"><h4>{properties.location}</h4></li>
           <li className={properties.state}>{properties.state}</li>
         </ul>
-       
-        <img src={properties.image} alt="boxhse" />
+       <img src={properties.image} alt="boxhse" />
       </div>
       <div className="info">
       <ul id="desc">

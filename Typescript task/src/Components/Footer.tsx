@@ -1,4 +1,3 @@
-import React from 'react';
 import { GrLanguage } from 'react-icons/gr';
 
 const Footer = () => {

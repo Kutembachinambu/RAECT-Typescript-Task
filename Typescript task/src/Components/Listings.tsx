@@ -1,7 +1,4 @@
-import { type } from "@testing-library/user-event/dist/type";
-import {Link, useNavigate} from 'react-router-dom';
-
-import * as React from "react";
+import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import boxhse from "../images/boxhse.jpg";
 import smallhse from "../images/smallhse.jpeg";
@@ -47,7 +44,7 @@ const PropertyList = (props: IProperties) => {
 
     return (
         
-            <div>
+            <div id='listings'>
                 {properties.map((property, index) => (
                     <div key={property.id}>
                         <div>
@@ -58,19 +55,19 @@ const PropertyList = (props: IProperties) => {
                                 <li><div className={property.state}>{property.state}</div></li>
                             </ul>  
                             
-                            <p id="distance">{property.distance}</p>
-                            <div className='specs'>
-                                <ul>
+                            <li><p id="distance">{property.distance}</p></li>
+                            <div>
+                        
+                                <ul  className='specs'>
                                 <li><img src={property.bdrmImg} alt="bed" /><span className="three">{property.bdrmQty}</span></li>
                                 <li><img src={property.bthrmImg} alt="bathroom" /><span className="three">{property.bthrmQty}</span></li>
                                 <li><img src={property.toiletImg} alt="toilet" /><span className="three">{property.toiletQty}</span></li>
 
-                                </ul>
-                                
+                                </ul>  
                             </div>
-                           
-                            <div>&#x20A6;30,000,000</div>
+                            
                             </li>
+                            <li><p>&#x20A6;30,000,000</p></li>
                         </ul>
                         </div>
                     </div>

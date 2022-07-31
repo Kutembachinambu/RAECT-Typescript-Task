@@ -22,6 +22,10 @@
   color: gray;
 }
 
+#bottomNav {
+  padding: 50px;
+}
+
 
 #bottomNav span {
   text-decoration: underline;
@@ -60,7 +64,7 @@ input::placeholder {
 }
 
 #input {
-  padding-right: 200px;
+  padding-right: 180px;
 }
 
 #user {
@@ -71,9 +75,10 @@ input::placeholder {
 
 .properties li {
   list-style-type: none;
-  padding: 15px;
+  padding: 5px 15px 0;
   float: left;
   color: #151212;
+  padding-left:0;
 
 }
 
@@ -89,12 +94,17 @@ input::placeholder {
   border: none;
 }
 
+.specs img{
+  width: 20px;
+  height: 20px;
+}
+
 .specs li{
   list-style-type: none;
   display: inline-block;
   color: #151212;
-  background: #fff
-
+  background: #fff;
+  padding-left:0;
 }
 
 #nums li {
@@ -113,11 +123,6 @@ input::placeholder {
   padding: 50px;
 }
 
-.specs img{
-  width: 20px;
-  height: 20px;
-}
-
 #rooms img{
   width: 40px;
   height: 40px;
@@ -127,8 +132,12 @@ input::placeholder {
   list-style-type: none;
   display: inline-block;
   padding-left: 80px;
-  padding-top: 20px;
+  padding-top: 5px;
+  padding-left:0;
  
+}
+#rooms {
+  padding: 20px; ;
 }
 
 .threee {
@@ -150,6 +159,7 @@ input::placeholder {
 
 #distance {
   color: gray;
+  padding-right: 70px;
 }
 
 #copyrights li {
@@ -162,6 +172,7 @@ input::placeholder {
   color: #151212;
   float: right;
   list-style-type: none;
+  padding: 20px;
 }
 
 #circle {
@@ -175,6 +186,10 @@ input::placeholder {
   text-align: center;
 }
 
+#listings {
+  padding: 10px 10px 10px 50px ;
+}
+
 .image {
   float: left;
   padding-left: 30px;
@@ -183,7 +198,7 @@ input::placeholder {
 .image img {
   padding: 30px 100px 30px 0;
   width: 600px;
-  height: 540px;
+  height: 550px;
   border-radius: 35px;
  
 }
@@ -248,7 +263,7 @@ input::placeholder {
 
 #search {
     position: absolute;
-    left: 900px;
+    left: 850px;
     top: 111px;
     width: 20px;
     height: 20px;
@@ -284,20 +299,85 @@ input::placeholder {
   background-color: rgb(29, 29, 201);
   color: #fff;
   font-size: 10px;
-  padding: 3px;
+  padding: 5px;
   text-align: center;
-
 }
 #location {
-  padding-right: 40px;
+  padding-right: 105px;
 }
 #stats li{
   list-style-type: none;
   display: inline-block;
-  padding-right: 25px;
+  padding-right: 45px;
    
 }
 
 #loc {
-  padding-right: 100px;
+  padding-right: 200px;
 }
+
+#error {
+  color: red;
+}
+
+ul {
+  padding-left: 0;
+}
+
+@media screen and (min-width: 400px) {
+  #listings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+  }
+
+  #logo {
+    padding-left: 50px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+#listings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+  #listings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+  
+  }
+  
+
+
+}
+
+@media screen and (min-width: 920px) {
+  #listings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+  
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #listings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+  }
+  
+  
+
+
+}
+

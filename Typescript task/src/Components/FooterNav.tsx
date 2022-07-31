@@ -1,7 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import leftarrow from '../images/leftarrow.png';
-import rightarrow from '../images/rightarrow.png';
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from 'react-icons/ai';
 
